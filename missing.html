@@ -54,7 +54,7 @@
         /* s = $('<div />').html('<div videoID="'+vidId+'" startTime="'+startTime+'" endTime="'+endTime+'" height="'+screen.availHeight+'" width="100%" id="youtube-player"></div><script src="http://snipfav.com/js/vidclip.js"></'+'script>');
 
         */
-        s = $('<div />').html('<div videoID="'+vidId+'" startTime="'+startTime+'" endTime="'+endTime+'" height="320px" width="100%" id="youtube-player"></div><script src="http://snipfav.com/js/vidclip.js"></'+'script>').css({"width":"100%", "height":"100%"});
+        s = $('<div />').html('<div videoID="'+vidId+'" startTime="'+startTime+'" endTime="'+endTime+'" height="320px" width="100%" id="youtube-player" autoplay="true"></div><script src="http://snipfav.com/js/vidclip.js"></'+'script>').css({"width":"100%", "height":"100%"});
 
              $('#container').html(s);
 
@@ -104,6 +104,10 @@ function init(){
 
 function showShareButs(){
     $('#socialLinks').fadeIn();
+    setTimeout(function(){
+        player.playVideo()
+
+    },500);
 }
 function fbs_click(width, height) {
     var leftPosition, topPosition;
