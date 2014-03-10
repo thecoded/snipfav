@@ -5,6 +5,7 @@ Other ideas include: more video platforms on the web or creating another version
 These all sound like great ideas.
 
 LINKS
+
 The httpd.conf file specifies that all non-existent pages be redirected to missing.html. Missing.html determines the video URL, start time, and end time by examining the URL string and displaying that video for that period. 
 
 More documentation coming soon.
