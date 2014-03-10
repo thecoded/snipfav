@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>a snipped vid</title>
+    <meta name="description" content="clipped to my specification" />
+    <meta name="keywords" content="snipfav, shorten youtube video, clip youtube video, clip out favorite part of youtube video, youtube clip generator, snipnip.it, what happened to snipsnip?" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="video" >
+    <meta property="og:video" content="https://www.youtube.com/v/k86xpd26M2g" id="meta">	
+    
+<meta property="og:video:width" content="398">
+<meta property="og:video:height" content="224">
+ <link rel="image_src" href="http://snipfav.com/img/video.jpg" />
+     <meta property='og:image' content="http://snipfav.com/img/video.jpg"/>
+
+    <!-- CSS Files -->
+	
+	<!-- / CSS Files -->
+	
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+<script src="http://snipfav.com/plugin/jquery-1.10.2.min.js"></script>
+  
+      <script>
+
+      function showVid(){
+
+        $('body').css({'height':screen.height})
+         if(window.location.href.indexOf('http://snipfav.com/') ==-1 ){
+        window.location="http://snipfav.com";
+        
+    }
+
+    else{
+         loc = window.location.href.replace('http://snipfav.com/', "");
+        locArr= loc.split("/");
+        vidId= locArr[0];
+
+        $('#meta').attr('content', "https://www.youtube.com/v/"+vidId);
+        if(!locArr[1]){
+             window.location="http://snipfav.com";
+        }
+        startTime= locArr[1];
+
+        if(!locArr[2]){
+             window.location="http://snipfav.com";
+        }
+        endTime= locArr[2];
+        
+         s = $('<div />').html('<div videoID="'+vidId+'" startTime="'+startTime+'" endTime="'+endTime+'" height="'+screen.availHeight+'" width="100%" id="youtube-player"></div><script src="http://snipfav.com/js/vidclip.js"></'+'script>');
+             $('body').html(s);
+
+    }
+
+      }
+   
+   $(document).ready(showVid)
+       
+
+
+    </script>
+</head>
+<body>
+   
+
+</body>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=6485075; 
+var sc_invisible=1; 
+var sc_security="fc317908"; 
+var sc_https=1; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counter" href="http://statcounter.com/free-hit-counter/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6485075/0/fc317908/1/"
+alt="free hit counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</html>
