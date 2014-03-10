@@ -183,7 +183,13 @@
         <section class="copyright">
             <div class="container">
                 &copy; Copyright 2014 <b>SnipFav</b> &nbsp; | &nbsp; All rights reserved
+
+                <div id="botLogo" style="padding:5px; display:inline-block;float:right; right:0px;">
+                <a href="http://thecoded.com" target="_blank"><img src="img/logoC.png" style="50px; height:auto"></a>
+
+                </div>
             </div>
+            
         </section>
     </footer>
     <!-- JavaScript Files -->
@@ -236,7 +242,7 @@
 
 
 
-            y = $('<div />').html('<iframe width="100%" height="315" src="'+videoURL+'" frameborder="0" allowfullscreen></iframe>');
+            y = $('<div />').html('<iframe width="320px" height="250px" src="'+videoURL+'" frameborder="0" allowfullscreen></iframe>');
             $('#videoStart').html(y);
             $('#fetchedVidLink').click();
             $('#showControls').show();
@@ -322,7 +328,7 @@
              $('#shareLink').val(url);
              $('#lastStep').show();
 
-             $('#embedCode').text('<iframe src="'+url+'" style="width:100%; height:320px"></iframe>');
+             $('#embedCode').text('<iframe src="'+url+'" style="width:480px; height:320px"></iframe>');
 
              
  
